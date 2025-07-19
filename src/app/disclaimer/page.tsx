@@ -20,7 +20,7 @@ export default function DisclaimerPage() {
                     <h2>Disclaimer | Monoscale Portfolio Project</h2>
                 </div>
                 <div className="disclaimerDescription">
-                    <p>This website is a fictional project created by Monoscale for portfolio and demonstration purposes only. It does not represent a real business or offer actual services. If you're interested in having something like this built for your brand, feel free to visit <Link href="https://monoscale.co"><span className="realWebsiteLink">monoscale.co</span></Link> to get in touch.</p>
+                    <p>This website is a fictional project created by Monoscale for portfolio and demonstration purposes only. It does not represent a real business or offer actual services. If you&apos;re interested in having something like this built for your brand, feel free to visit <Link href="https://monoscale.co"><span className="realWebsiteLink">monoscale.co</span></Link> to get in touch.</p>
                 </div>
             </div>
             
