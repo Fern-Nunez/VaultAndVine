@@ -95,7 +95,7 @@ export default function Home() {
       <div className="aboutSection" id="about">
         <div className="backDropImageContainer">
           <Image
-            src="/home/backdrop.svg"
+            src="/home/backDrop.svg"
             alt="backdrop image"
             fill
             className="backDropImage"
