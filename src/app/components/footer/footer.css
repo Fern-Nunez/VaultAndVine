@@ -1,0 +1,121 @@
+.footerSection {
+  padding: 0 1rem;
+  color: #1e3d2f;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.footerSectionImageContainer {
+  width: 100%;
+  height: clamp(74px, 15vw, 134.5px);
+  position: relative;
+  margin-top: clamp(2rem, 3vw, 5rem);
+  margin-bottom: 2rem;
+  max-width: 650px;
+}
+
+.footerSectionImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footerLocationSection, .desktopQuickLinkSection, .desktopLegalSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: clamp(1rem, 3vw, 4rem) 0;
+}
+
+.footerTopLevel {
+  font-size: clamp(20px, 4vw, 32px);
+}
+
+.footerNavTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+  font-size: clamp(20px, 4vw, 32px);
+  font-weight: 500;
+}
+
+.footerChevron {
+  width: 18px;
+  height: 18px;
+  color: #1e3d2f;
+  transition: transform 0.3s ease;
+}
+
+.footerBottomLevel,
+.footerBottomLevelNav {
+  font-size: clamp(20px, 4vw, 32px);
+  font-weight: 300;
+}
+
+.footerSeperator {
+  border: none;
+  border-top: 1px solid #1e3d2f;
+  margin-top: 0.5rem;
+}
+
+.footerChevron.rotate {
+  transform: rotate(180deg);
+}
+.rights{
+    color: gray;
+    font-size: clamp(20px, 4vw, 32px);
+    font-weight: 300;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.footerCollapsible {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
+  padding: 1rem 0;
+}
+
+.footerCollapsible.open {
+  max-height: 900px; /* large enough to show the content */
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footerBottomLevelNavDesktop, .footerBottomLevelNavDeskTop{
+    font-size: clamp(20px, 4vw, 32px);
+    font-weight: 300;
+    cursor: pointer;
+}
+.footerQuickLinkSection{
+    padding-top: 1rem;
+}
+@media (max-width: 1060px){
+     .desktopQuickLinkSection, .desktopLegalSection {
+        display: none;
+    }
+}
+@media (min-width: 1060px){
+    .footerQuickLinkSection{
+        display: none;
+    }
+    .footerLegalSection{
+        display: none;
+    }
+    .desktopGrid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: 10rem;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,21 @@
+.main-button {
+  background-color: #1F4227;
+  color: white;
+  padding: 0.75rem 0;
+  border-radius: 50px;
+  font-size: clamp(18px, 4vw, 24px);
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+}
+
+@media (min-width: 800px) {
+  .main-button {
+    padding: 0.75rem 9rem;
+    width: auto; /* ✅ This overrides 100% width */
+  }
+}
+

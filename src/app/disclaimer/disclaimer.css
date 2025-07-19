@@ -1,0 +1,28 @@
+.disclaimerWrapper{
+    height: clamp(900px, 50vw, 1500px);
+}
+.disclaimerImageContainer{
+    height: 40%;
+    width: 100%;
+    position: relative;
+}
+.dislcaimerImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.dislcaimerTextContainer{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: clamp(1rem, 3vw, 2rem) clamp(1rem, 3vw, 5rem);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 2vw, 1.5rem);
+}
+.disclaimerDescription{
+    padding-bottom: 3rem;
+}
+.realWebsiteLink{
+    text-decoration: underline;
+    color: #0000EE;
+}
